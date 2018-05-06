@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="I1y-Zb-MBq">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="weight_training_aoto" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="jhe-hB-ivK" userLabel="Main stack view">
+                                <rect key="frame" x="0.0" y="80" width="375" height="587"/>
+                                <subviews>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Height" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="HaL-R2-mwX">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="69"/>
+                                        <color key="textColor" red="0.0" green="0.97680455450000003" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                        <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                    </textField>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="DBi-xV-cnX">
+                                        <rect key="frame" x="0.0" y="79" width="375" height="120"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YXk-wX-Dhp" userLabel="Male">
+                                                <rect key="frame" x="0.0" y="0.0" width="177.5" height="120"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <state key="normal" image="maleicon-1"/>
+                                                <connections>
+                                                    <action selector="handleMaleButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="gjr-NT-CBE"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iEB-d6-tu2" userLabel="Female">
+                                                <rect key="frame" x="197.5" y="0.0" width="177.5" height="120"/>
+                                                <color key="backgroundColor" cocoaTouchSystemColor="tableCellGroupedBackgroundColor"/>
+                                                <state key="normal" image="FemaleIcon">
+                                                    <color key="titleColor" red="1" green="0.21357387575100173" blue="0.96294754712230768" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="handleFemaleButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="g4w-OU-IVy"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="120" id="mNO-Jr-1QW"/>
+                                        </constraints>
+                                    </stackView>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Weight" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="MUf-Hq-I85">
+                                        <rect key="frame" x="0.0" y="209" width="375" height="69"/>
+                                        <color key="textColor" red="0.7302546102212053" green="0.97680455450000003" blue="0.73349159865282809" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                        <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                    </textField>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Lean Body Mass" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ciB-4e-GoA">
+                                        <rect key="frame" x="0.0" y="288" width="375" height="64"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                        <color key="textColor" red="1" green="0.7255508573635967" blue="0.030496812184935163" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JHv-rT-4gS">
+                                        <rect key="frame" x="0.0" y="362" width="375" height="79.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                        <state key="normal" title="Calculate">
+                                            <color key="titleColor" red="1" green="0.93923861744661608" blue="0.27762189375602797" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="calculateLeanBodyMass:" destination="BYZ-38-t0r" eventType="touchUpInside" id="eAz-sI-nrv"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NFX-x8-w6g">
+                                        <rect key="frame" x="0.0" y="451.5" width="375" height="135.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                        <state key="normal" title="Next">
+                                            <color key="titleColor" red="1" green="0.94946306538067959" blue="0.27079809006021405" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="handleNextButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="pae-2B-6Kk"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.15367283607272375" green="0.45018183903942" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="jhe-hB-ivK" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="KA7-cM-x7a"/>
+                            <constraint firstItem="jhe-hB-ivK" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="16" id="c6B-6M-Q4h"/>
+                            <constraint firstItem="jhe-hB-ivK" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="iNv-S1-CoQ"/>
+                            <constraint firstItem="jhe-hB-ivK" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="xz8-Fq-jSP"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="5mO-Z2-u7f"/>
+                    <connections>
+                        <outlet property="femaleButton" destination="iEB-d6-tu2" id="RAd-iV-pUg"/>
+                        <outlet property="heightTextField" destination="HaL-R2-mwX" id="RdB-K3-NEI"/>
+                        <outlet property="leanBodyMass" destination="ciB-4e-GoA" id="nDW-Qb-UPL"/>
+                        <outlet property="maleButton" destination="YXk-wX-Dhp" id="eTn-ff-AA0"/>
+                        <outlet property="weightTextField" destination="MUf-Hq-I85" id="j3W-MT-knw"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="340" y="51.724137931034484"/>
+        </scene>
+        <!--Level View Controller-->
+        <scene sceneID="MYU-Rf-iOc">
+            <objects>
+                <viewController storyboardIdentifier="levelViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Xjw-JE-btl" customClass="LevelViewController" customModule="weight_training_aoto" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="0k8-eP-Yt4">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="Ixd-MO-rJS">
+                                <rect key="frame" x="0.0" y="36" width="375" height="631"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fbT-Zb-bBB">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="143"/>
+                                        <color key="backgroundColor" red="0.0" green="0.97680455450000003" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="50"/>
+                                        <state key="normal" title="Beginner">
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="handleBeginnerButtonTapped:" destination="Xjw-JE-btl" eventType="touchUpInside" id="n4i-ZR-tJs"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qCH-x0-ld1">
+                                        <rect key="frame" x="0.0" y="153" width="375" height="142.5"/>
+                                        <color key="backgroundColor" red="1" green="0.94946306540000003" blue="0.2707980901" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="50"/>
+                                        <state key="normal" title="Intermediate">
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="handleIntermediateButtonTapped:" destination="Xjw-JE-btl" eventType="touchUpInside" id="kdA-WO-MqM"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OKG-1T-osS">
+                                        <rect key="frame" x="0.0" y="305.5" width="375" height="143"/>
+                                        <color key="backgroundColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="50"/>
+                                        <state key="normal" title="Advance">
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="handleAdvancedButtonTapped:" destination="Xjw-JE-btl" eventType="touchUpInside" id="3eQ-oc-BZ2"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="j4z-Gx-jth">
+                                        <rect key="frame" x="0.0" y="458.5" width="375" height="172.5"/>
+                                        <color key="backgroundColor" red="0.15367283609999999" green="0.45018183899999997" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="50"/>
+                                        <state key="normal" title="Next">
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="handleNextButtonTapped:" destination="Xjw-JE-btl" eventType="touchUpInside" id="ES8-6N-Bgn"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="4KP-pN-Syb" firstAttribute="trailing" secondItem="Ixd-MO-rJS" secondAttribute="trailing" id="5Nh-cU-Mxo"/>
+                            <constraint firstItem="Ixd-MO-rJS" firstAttribute="leading" secondItem="4KP-pN-Syb" secondAttribute="leading" id="NND-2u-b8M"/>
+                            <constraint firstItem="Ixd-MO-rJS" firstAttribute="top" secondItem="4KP-pN-Syb" secondAttribute="top" constant="16" id="Xk7-7q-rAm"/>
+                            <constraint firstItem="4KP-pN-Syb" firstAttribute="bottom" secondItem="Ixd-MO-rJS" secondAttribute="bottom" id="tCt-9G-Zf7"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="4KP-pN-Syb"/>
+                    </view>
+                    <connections>
+                        <outlet property="advancedButton" destination="OKG-1T-osS" id="cYO-jr-nAR"/>
+                        <outlet property="beginnerButton" destination="fbT-Zb-bBB" id="LKR-Or-94v"/>
+                        <outlet property="intermediateButton" destination="qCH-x0-ld1" id="BtN-le-Ad0"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="j0g-Ok-Fte" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1180" y="51.724137931034484"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="Bls-GU-hcr">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="I1y-Zb-MBq" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="IBD-cN-kzV">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" red="0.21176470588235294" green="0.46274509803921571" blue="0.96470588235294119" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="fgD-vW-O7V"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="y4D-Uk-6Ne" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-599.20000000000005" y="51.724137931034484"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="FemaleIcon" width="647" height="608"/>
+        <image name="maleicon-1" width="553" height="535"/>
+    </resources>
+</document>
