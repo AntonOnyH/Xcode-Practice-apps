@@ -1,0 +1,485 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		7766278720A1CE9900FFC6BE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7766278620A1CE9900FFC6BE /* AppDelegate.swift */; };
+		7766278920A1CE9900FFC6BE /* MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7766278820A1CE9900FFC6BE /* MainVC.swift */; };
+		7766278C20A1CE9900FFC6BE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7766278A20A1CE9900FFC6BE /* Main.storyboard */; };
+		7766278E20A1CE9A00FFC6BE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7766278D20A1CE9A00FFC6BE /* Assets.xcassets */; };
+		7766279120A1CE9A00FFC6BE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7766278F20A1CE9A00FFC6BE /* LaunchScreen.storyboard */; };
+		7766279B20A1D0B100FFC6BE /* Currency TxtField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7766279A20A1D0B100FFC6BE /* Currency TxtField.swift */; };
+		776627A720A1E03F00FFC6BE /* Custom Keybord.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 776627A020A1E03F00FFC6BE /* Custom Keybord.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		776627A520A1E03F00FFC6BE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7766277B20A1CE9900FFC6BE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7766279F20A1E03F00FFC6BE;
+			remoteInfo = "Custom Keybord";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		776627AB20A1E03F00FFC6BE /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				776627A720A1E03F00FFC6BE /* Custom Keybord.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		7766278320A1CE9900FFC6BE /* Window - Shopper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Window - Shopper.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7766278620A1CE9900FFC6BE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		7766278820A1CE9900FFC6BE /* MainVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainVC.swift; sourceTree = "<group>"; };
+		7766278B20A1CE9900FFC6BE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		7766278D20A1CE9A00FFC6BE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		7766279020A1CE9A00FFC6BE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		7766279220A1CE9A00FFC6BE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7766279A20A1D0B100FFC6BE /* Currency TxtField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Currency TxtField.swift"; sourceTree = "<group>"; };
+		776627A020A1E03F00FFC6BE /* Custom Keybord.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Custom Keybord.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		7766278020A1CE9900FFC6BE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7766279D20A1E03F00FFC6BE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		7766277A20A1CE9900FFC6BE = {
+			isa = PBXGroup;
+			children = (
+				7766278520A1CE9900FFC6BE /* Window - Shopper */,
+				7766278420A1CE9900FFC6BE /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		7766278420A1CE9900FFC6BE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7766278320A1CE9900FFC6BE /* Window - Shopper.app */,
+				776627A020A1E03F00FFC6BE /* Custom Keybord.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7766278520A1CE9900FFC6BE /* Window - Shopper */ = {
+			isa = PBXGroup;
+			children = (
+				7766279920A1D07300FFC6BE /* Views */,
+				7766279820A1CEAC00FFC6BE /* Controller */,
+				7766278620A1CE9900FFC6BE /* AppDelegate.swift */,
+				7766278A20A1CE9900FFC6BE /* Main.storyboard */,
+				7766278D20A1CE9A00FFC6BE /* Assets.xcassets */,
+				7766278F20A1CE9A00FFC6BE /* LaunchScreen.storyboard */,
+				7766279220A1CE9A00FFC6BE /* Info.plist */,
+			);
+			path = "Window - Shopper";
+			sourceTree = "<group>";
+		};
+		7766279820A1CEAC00FFC6BE /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				7766278820A1CE9900FFC6BE /* MainVC.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		7766279920A1D07300FFC6BE /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				7766279A20A1D0B100FFC6BE /* Currency TxtField.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		7766278220A1CE9900FFC6BE /* Window - Shopper */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7766279520A1CE9A00FFC6BE /* Build configuration list for PBXNativeTarget "Window - Shopper" */;
+			buildPhases = (
+				7766277F20A1CE9900FFC6BE /* Sources */,
+				7766278020A1CE9900FFC6BE /* Frameworks */,
+				7766278120A1CE9900FFC6BE /* Resources */,
+				776627AB20A1E03F00FFC6BE /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				776627A620A1E03F00FFC6BE /* PBXTargetDependency */,
+			);
+			name = "Window - Shopper";
+			productName = "Window - Shopper";
+			productReference = 7766278320A1CE9900FFC6BE /* Window - Shopper.app */;
+			productType = "com.apple.product-type.application";
+		};
+		7766279F20A1E03F00FFC6BE /* Custom Keybord */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 776627A820A1E03F00FFC6BE /* Build configuration list for PBXNativeTarget "Custom Keybord" */;
+			buildPhases = (
+				7766279C20A1E03F00FFC6BE /* Sources */,
+				7766279D20A1E03F00FFC6BE /* Frameworks */,
+				7766279E20A1E03F00FFC6BE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Custom Keybord";
+			productName = "Custom Keybord";
+			productReference = 776627A020A1E03F00FFC6BE /* Custom Keybord.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		7766277B20A1CE9900FFC6BE /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0930;
+				LastUpgradeCheck = 0930;
+				ORGANIZATIONNAME = antonsolo;
+				TargetAttributes = {
+					7766278220A1CE9900FFC6BE = {
+						CreatedOnToolsVersion = 9.3;
+					};
+					7766279F20A1E03F00FFC6BE = {
+						CreatedOnToolsVersion = 9.3;
+					};
+				};
+			};
+			buildConfigurationList = 7766277E20A1CE9900FFC6BE /* Build configuration list for PBXProject "Window - Shopper" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 7766277A20A1CE9900FFC6BE;
+			productRefGroup = 7766278420A1CE9900FFC6BE /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				7766278220A1CE9900FFC6BE /* Window - Shopper */,
+				7766279F20A1E03F00FFC6BE /* Custom Keybord */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		7766278120A1CE9900FFC6BE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7766279120A1CE9A00FFC6BE /* LaunchScreen.storyboard in Resources */,
+				7766278E20A1CE9A00FFC6BE /* Assets.xcassets in Resources */,
+				7766278C20A1CE9900FFC6BE /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7766279E20A1E03F00FFC6BE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		7766277F20A1CE9900FFC6BE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7766278920A1CE9900FFC6BE /* MainVC.swift in Sources */,
+				7766278720A1CE9900FFC6BE /* AppDelegate.swift in Sources */,
+				7766279B20A1D0B100FFC6BE /* Currency TxtField.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7766279C20A1E03F00FFC6BE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		776627A620A1E03F00FFC6BE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7766279F20A1E03F00FFC6BE /* Custom Keybord */;
+			targetProxy = 776627A520A1E03F00FFC6BE /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		7766278A20A1CE9900FFC6BE /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7766278B20A1CE9900FFC6BE /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		7766278F20A1CE9A00FFC6BE /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7766279020A1CE9A00FFC6BE /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		7766279320A1CE9A00FFC6BE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		7766279420A1CE9A00FFC6BE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		7766279620A1CE9A00FFC6BE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = XGL6HPWPPW;
+				INFOPLIST_FILE = "Window - Shopper/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "a-solo.Window---Shopper";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		7766279720A1CE9A00FFC6BE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = XGL6HPWPPW;
+				INFOPLIST_FILE = "Window - Shopper/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "a-solo.Window---Shopper";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		776627A920A1E03F00FFC6BE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = XGL6HPWPPW;
+				INFOPLIST_FILE = "Custom Keybord/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "a-solo.Window---Shopper.Custom-Keybord";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		776627AA20A1E03F00FFC6BE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = XGL6HPWPPW;
+				INFOPLIST_FILE = "Custom Keybord/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "a-solo.Window---Shopper.Custom-Keybord";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		7766277E20A1CE9900FFC6BE /* Build configuration list for PBXProject "Window - Shopper" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7766279320A1CE9A00FFC6BE /* Debug */,
+				7766279420A1CE9A00FFC6BE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7766279520A1CE9A00FFC6BE /* Build configuration list for PBXNativeTarget "Window - Shopper" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7766279620A1CE9A00FFC6BE /* Debug */,
+				7766279720A1CE9A00FFC6BE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		776627A820A1E03F00FFC6BE /* Build configuration list for PBXNativeTarget "Custom Keybord" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				776627A920A1E03F00FFC6BE /* Debug */,
+				776627AA20A1E03F00FFC6BE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 7766277B20A1CE9900FFC6BE /* Project object */;
+}
